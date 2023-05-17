@@ -19,3 +19,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//plugins used
+//image_picker

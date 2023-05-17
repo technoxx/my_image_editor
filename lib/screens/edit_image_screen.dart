@@ -1,8 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class EditImageScreen extends StatefulWidget {
-  final String selectedImage;
-  const EditImageScreen({Key? key, required this.selectedImage})
+  final String myselectedImage;
+  const EditImageScreen({Key? key, required this.myselectedImage})
       : super(key: key);
 
   @override
@@ -12,6 +14,8 @@ class EditImageScreen extends StatefulWidget {
 class _EditImageScreenState extends State<EditImageScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Image.file(File(widget.myselectedImage)),
+    );
   }
 }
