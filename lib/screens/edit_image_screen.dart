@@ -18,11 +18,192 @@ class _EditImageScreenState extends EditImageViewModel {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        automaticallyImplyLeading: false,
+        title: SizedBox(
+          height: 50,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.save,
+                  color: Colors.black,
+                ),
+                tooltip: 'Save Image',
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.add,
+                  color: Colors.black,
+                ),
+                tooltip: 'Increase font size',
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.remove,
+                  color: Colors.black,
+                ),
+                tooltip: 'Decrease font size',
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.format_align_left,
+                  color: Colors.black,
+                ),
+                tooltip: 'Align Left',
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.format_align_center,
+                  color: Colors.black,
+                ),
+                tooltip: 'Align Center',
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.format_align_right,
+                  color: Colors.black,
+                ),
+                tooltip: 'Align Right',
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.format_bold,
+                  color: Colors.black,
+                ),
+                tooltip: 'Bold',
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.format_italic,
+                  color: Colors.black,
+                ),
+                tooltip: 'Italic',
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.space_bar,
+                  color: Colors.black,
+                ),
+                tooltip: 'Add New Line',
+              ),
+              Tooltip(
+                message: 'Red',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.red,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Tooltip(
+                message: 'Black',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.black,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Tooltip(
+                message: 'White',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.white,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Tooltip(
+                message: 'Blue',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.blue,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Tooltip(
+                message: 'Yellow',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.yellow,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Tooltip(
+                message: 'Orange',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.orange,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Tooltip(
+                message: 'Green',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.green,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+              Tooltip(
+                message: 'Pink',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: const CircleAvatar(
+                    backgroundColor: Colors.pink,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 5,
+              ),
+            ],
+          ),
+        ),
+      ),
       body: SafeArea(
         child: SizedBox(
           height: MediaQuery.of(context).size.height * 0.3,
           child: Stack(
             children: [
+              //for displaying image
               Center(
                 child: Image.file(
                   File(
