@@ -7,6 +7,22 @@ abstract class EditImageViewModel extends State<EditImageScreen> {
   TextEditingController textEditingController = TextEditingController();
   TextEditingController creatorText = TextEditingController();
   List<TextInfo> texts = [];
+  int currentIndex = 0;
+  setCurrentIndex(BuildContext context, index) {
+    setState(() {
+      currentIndex = index;
+    });
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text(
+          'Selected for styling',
+          style: TextStyle(
+            fontSize: 16.0,
+          ),
+        ),
+      ),
+    );
+  }
 
   myAddNewText(BuildContext context) {
     setState(() {
@@ -25,6 +41,7 @@ abstract class EditImageViewModel extends State<EditImageScreen> {
     });
   }
 
+//for text typing box
   myaddNewDialog(context) {
     showDialog(
       context: context,

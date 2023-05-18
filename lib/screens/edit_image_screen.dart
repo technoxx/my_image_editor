@@ -214,16 +214,19 @@ class _EditImageScreenState extends EditImageViewModel {
                 ),
               ),
               for (int i = 0; i < texts.length; i++)
+                //for text
                 Positioned(
                   left: texts[i].left,
                   top: texts[i].top,
                   child: GestureDetector(
+                    //on pressing that text
                     onLongPress: () {
                       print('Long press detected');
                     },
-                    onTap: () {
-                      print('Single press detected');
-                    },
+                    onTap: () => setCurrentIndex(
+                      context,
+                      i,
+                    ),
                     child: Draggable(
                       feedback: MyImageText(textInfo: texts[i]),
                       child: MyImageText(textInfo: texts[i]),
