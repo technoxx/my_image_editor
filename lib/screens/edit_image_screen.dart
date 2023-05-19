@@ -35,7 +35,7 @@ class _EditImageScreenState extends EditImageViewModel {
                 tooltip: 'Save Image',
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: increaseFontSize,
                 icon: const Icon(
                   Icons.add,
                   color: Colors.black,
@@ -43,7 +43,7 @@ class _EditImageScreenState extends EditImageViewModel {
                 tooltip: 'Increase font size',
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: decreaseFontSize,
                 icon: const Icon(
                   Icons.remove,
                   color: Colors.black,
