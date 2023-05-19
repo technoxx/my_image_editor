@@ -24,6 +24,12 @@ abstract class EditImageViewModel extends State<EditImageScreen> {
     );
   }
 
+  changeTextColor(Color color) {
+    setState(() {
+      texts[currentIndex].color = color;
+    });
+  }
+
   myAddNewText(BuildContext context) {
     setState(() {
       texts.add(
